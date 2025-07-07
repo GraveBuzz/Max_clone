@@ -1,0 +1,38 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../../dist/img/hero\ copy.jpg);
+
+
+
+    &__content {
+        min-height: auto;
+        display: flex;
+        max-width: 500px;
+
+        &____branding{
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(0 0 0) 10%, rgba(0, 0, 0, 0) 50%);
+    }
+
+}
+

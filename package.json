@@ -21,7 +21,8 @@
   "homepage": "https://github.com/GraveBuzz/Max_clone#readme",
   "devDependencies": {
     "gulp": "^5.0.1",
-    "gulp-sass": "^6.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.89.2"
   }
 }

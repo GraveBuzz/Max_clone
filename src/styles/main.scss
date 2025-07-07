@@ -1,5 +1,15 @@
-$bgColor: blue;
+@use 'hero';
 
-body{
-    background-color: $bgColor;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+$corDeFundo: #000000;
+
+body {
+    background-color: $corDeFundo;
 }
