@@ -1,24 +1,12 @@
 .hero {
     width: 100%;
     min-height: 100vh;
-    display: block;
-    position: relative;
+    display: flex;
+    flex-direction: row;
     background-size: cover;
     background-position: center center;
-    background-image: url(../../dist/img/hero\ copy.jpg);
+    background-image: url(../img/hero.jpg);
 
-
-
-    &__content {
-        min-height: auto;
-        display: flex;
-        max-width: 500px;
-
-        &____branding{
-            max-width: 300px;
-            margin: 0 auto;
-        }
-    }
 
     &::before{
     content: '';

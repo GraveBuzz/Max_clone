@@ -1,5 +1,17 @@
 @use 'hero';
 
+
+@font-face {
+    font-family: principal;
+    src: url(../../assetes/fonts/principal.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Titulo;
+    src: url(../../assetes/fonts/Titulo.otf);
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +24,5 @@ $corDeFundo: #000000;
 
 body {
     background-color: $corDeFundo;
+    font-family: principal, sans-serif;
 }
