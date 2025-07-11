@@ -1,15 +1,59 @@
 @use 'hero';
+@use 'about';
+
+@mixin text($fontSize: 28px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: silver;
+
+}
+
+@mixin title($fontSize: 28px) {
+    @include text($fontSize);
+    color: rgb(212,28,44);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text--big {
+    @include text(28px);
+    font-family: principal, sans-serif;
+}
+
+.text {
+    @include text;
+    font-family: principal, sans-serif;
+}
+
+.title--big {
+    @include title(58px);
+    font-family: titulo, sans-serif;
+}
+
+.title {
+    @include title(40px);
+    font-family: titulo, sans-serif;
+}
+
+.title--small {
+    @include title(28px);
+    font-family: titulo, sans-serif;
+}
+
+
 
 
 @font-face {
     font-family: principal;
-    src: url(../../assetes/fonts/principal.ttf);
-    font-weight: 400;
+    src: url('../../assetes/fonts/principal.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: Titulo;
-    src: url(../../assetes/fonts/Titulo.otf);
-    font-weight: 700;
+    font-family: titulo;
+    src: url('../../assetes/fonts/Titulo.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -22,7 +66,7 @@
 
 $corDeFundo: #000000;
 
+
 body {
     background-color: $corDeFundo;
-    font-family: principal, sans-serif;
 }

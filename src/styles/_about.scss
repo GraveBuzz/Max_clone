@@ -1,0 +1,29 @@
+.about {
+    
+    &__img{
+        img {
+                margin-left: 35%;
+                height: 40vh;
+        }
+    }
+
+    &__sobre-nos{
+    padding: 2vw 5.6vw;
+
+        h1 {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        &__text{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            img {
+                max-width: 100%;
+            }
+
+        }
+    }
+}
