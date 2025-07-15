@@ -1,0 +1,38 @@
+.org {
+    h1 {
+        padding-top: 20vh;
+        padding-bottom: 15vh;
+        text-align: center;
+    }
+
+    &__organograma {
+        padding: 2vw 5.6vw;
+
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            .img--org {
+            max-width: 100%;
+            }
+
+            &__p {
+                display: block;
+
+                img {
+                    height: 108px;
+                    width: 108px;
+                    float: left;
+                    margin-right: 1vw;
+                    margin-top: 20px;
+                    border: 2px solid #000;
+                    border-radius: 25%;
+                }
+            }
+        }
+
+
+    }
+
+}

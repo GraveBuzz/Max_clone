@@ -1,5 +1,7 @@
 @use 'hero';
 @use 'about';
+@use 'org';
+@use 'faq';
 
 @mixin text($fontSize: 28px) {
     font-size: $fontSize;
@@ -23,6 +25,11 @@
 .text {
     @include text;
     font-family: principal, sans-serif;
+}
+.text--small {
+    @include text(18px);
+    font-family: principal, sans-serif;
+    color: silver;
 }
 
 .title--big {
