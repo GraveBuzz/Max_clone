@@ -2,6 +2,8 @@
 @use 'about';
 @use 'org';
 @use 'faq';
+@use 'footer';
+@use 'header';
 
 @mixin text($fontSize: 28px) {
     font-size: $fontSize;
@@ -28,6 +30,11 @@
 }
 .text--small {
     @include text(18px);
+    font-family: principal, sans-serif;
+    color: silver;
+}
+.text--footer {
+    @include text(15px);
     font-family: principal, sans-serif;
     color: silver;
 }
@@ -67,7 +74,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    list-style: none;
 
 }
 
@@ -76,4 +83,36 @@ $corDeFundo: #000000;
 
 body {
     background-color: $corDeFundo;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: silver;
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid black;
+
+    &--secundary{
+        background-color: rgb(199, 27, 27);
+
+    }
+
+    &--dark {
+        background-color: rgba(0,0,0,0.8);
+        border-color: silver;
+
+        &:hover{
+            background-color: rgb(255, 0, 0);
+            color: black;
+        }
+    }
 }
