@@ -4,6 +4,7 @@
 @use 'faq';
 @use 'footer';
 @use 'header';
+@use 'obras';
 
 @mixin text($fontSize: 28px) {
     font-size: $fontSize;
