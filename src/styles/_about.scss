@@ -4,15 +4,28 @@
         img {
                 margin-left: 35%;
                 height: 40vh;
+
+        @media (max-width: 768px) {
+        display: none;
+        }
         }
     }
 
     &__sobre-nos{
     padding: 2vw 5.6vw;
 
+        @media (max-width: 768px) {
+        display: block;
+        width: 100%;
+        }
+
         h1 {
             text-align: center;
             padding-bottom: 15vh;
+
+            @media (max-width: 768px) {
+                margin-top: 10vh;
+        }
         }
 
         &__text{
@@ -20,8 +33,16 @@
             grid-template-columns: 1fr 1fr;
             gap: 30px;
 
+            @media (max-width: 768px) {
+            display: block;
+            }
+
             img {
                 max-width: 100%;
+
+            @media (max-width: 768px) {
+            visibility: hidden;
+            }
             }
 
         }
